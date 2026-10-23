@@ -1,0 +1,32 @@
+.begin {
+  text-align: center;
+  padding-top: 56px;
+}
+
+.begin-ondas {
+  width: 172px;
+  margin: 0 auto 24px;
+}
+
+.begin-subtitles {
+  font-size: 20px;
+  color: var(--gray);
+}
+
+.begin-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+@media (min-width: 1024px) {
+  .begin-ondas {
+    width: 412px;
+  }
+
+  .begin-subtitles {
+    font-size: 36px;
+  }
+}

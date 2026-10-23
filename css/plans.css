@@ -1,0 +1,92 @@
+.plans {
+  padding: 56px 0;
+}
+
+.plans-topo {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 32px;
+}
+
+.lista-plans {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.plan {
+  position: relative;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px 24px;
+}
+
+.premium {
+  border: 2px solid var(--orange);
+  padding-top: 72px;
+}
+
+.selo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, var(--gradient-plans), var(--orange));
+  color: var(--black-dark);
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 28px;
+  border-radius: 18px 0 20px 0;
+}
+
+.plan-desc, .preco span, .lista-itens li, .obs {
+  color: var(--gray);
+}
+
+.preco {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 24px 0;
+}
+
+.preco span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.lista-itens {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.lista-itens li {
+  margin-bottom: 14px;
+  padding-left: 32px;
+  background: url("../assets/icons/check.svg") no-repeat 0 2px;
+  background-size: 22px;
+}
+
+.obs {
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .lista-plans {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    max-width: none;
+  }
+
+  .plan {
+    width: 33%;
+    padding: 32px;
+  }
+
+  .premium {
+    padding: 72px 32px
+  }
+}
